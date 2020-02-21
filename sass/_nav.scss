@@ -1,0 +1,28 @@
+@use 'mixins';
+
+nav ul {
+    @include mixins.flex(row);
+    flex-wrap: nowrap;
+    background: red;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .nav-item {
+        font-size: 2rem;
+        @include mixins.flex();
+        color: blue;
+        border: 1px solid gray;
+        background: lightblue;
+        height: 50px;
+        width: 19%;
+
+        li,
+        a {
+            @include mixins.flex();
+            text-decoration: none;
+            color: blue;
+        }
+    }
+}

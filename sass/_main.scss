@@ -1,0 +1,41 @@
+@use 'mixins';
+@use 'nav';
+
+body {
+    @include mixins.flex();
+
+    padding-bottom: 60px;
+    border: 5px solid blue;
+    header {
+        @include mixins.flex(row);
+
+        .face {
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 5rem;
+            color: blue;
+        }
+    }
+
+    main {
+        section {
+            @include mixins.flex();
+            border: 1px solid red;
+            font-size: 2rem;
+        }
+
+        .skills {
+            ul {
+                @include mixins.flex(row);
+                align-content: space-around;
+
+                li {
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
