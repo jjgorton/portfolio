@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Krona+One|Lato&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -214,8 +214,9 @@ body header .face {
   border-radius: 50%;
 }
 body header .name {
-  font-size: 6rem;
-  padding: 5px;
+  font-family: "Krona One";
+  font-size: 4.5rem;
+  padding: 1rem 0;
   color: blue;
 }
 body header .title {
@@ -239,6 +240,11 @@ body main section {
   font-size: 2rem;
   padding: 2rem 1rem;
   margin-bottom: 10px;
+}
+body main section .section-heading {
+  font-family: "Krona One";
+  font-size: 3rem;
+  width: 100%;
 }
 body main .skills {
   background: rgba(0, 9, 128, 0.432);
@@ -278,19 +284,45 @@ body main .projects {
   background: rgba(128, 0, 128, 0.432);
 }
 body main .projects .project {
-  background: silver;
-  margin: 5px 0;
+  margin: 25px 0;
 }
 body main .projects .app-img {
   max-width: 100%;
-  border: 1px solid red;
+}
+body main .projects .project-heading {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body main .projects .project-heading .title {
+  font-size: 3.5rem;
+  padding: 2rem 0;
+  width: 100%;
+  text-align: end;
+  flex-wrap: nowrap;
+}
+body main .projects .project-heading .github {
+  padding: 10px;
+  font-size: 2.5rem;
+}
+body main .projects .project-heading .github i {
+  font-size: 3rem;
+  padding: 0 5px 0 0;
+}
+body main .projects .description {
+  padding: 0 10px;
+  line-height: 1.4;
+  font-size: 2.2rem;
 }
 body main .projects .tech-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 0;
 }
 body main .projects .tech-list .tech {
   text-align: center;
@@ -306,9 +338,11 @@ body main .projects .contribution-list {
   align-items: center;
 }
 body main .projects .contribution-list .contribution {
-  width: 90%;
-  margin: 5px;
+  width: 85%;
   list-style: outside;
+  margin: 10px;
+  line-height: 1.4;
+  font-size: 2.2rem;
 }
 
 /*# sourceMappingURL=index.css.map */

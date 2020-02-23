@@ -22,8 +22,9 @@ body {
         }
 
         .name {
-            font-size: 6rem;
-            padding: 5px;
+            font-family: $font-heading;
+            font-size: 4.5rem;
+            padding: 1rem 0;
             color: blue;
         }
 
@@ -40,6 +41,7 @@ body {
 
     main {
         padding: 5px;
+
         section {
             @include mixins.flex();
             min-height: 85vh;
@@ -47,6 +49,13 @@ body {
             font-size: 2rem;
             padding: 2rem 1rem;
             margin-bottom: 10px;
+
+            .section-heading {
+                font-family: $font-heading;
+                font-size: 3rem;
+                // font-weight: bold;
+                width: 100%;
+            }
         }
 
         .skills {
@@ -85,17 +94,46 @@ body {
             background: rgba(128, 0, 128, 0.432);
 
             .project {
-                background: silver;
-                margin: 5px 0;
+                // background: silver;
+                margin: 25px 0;
             }
 
             .app-img {
                 max-width: 100%;
-                border: 1px solid red;
+                // border: 1px solid red;
+            }
+
+            .project-heading {
+                @include mixins.flex(column, flex-start, flex-start);
+                // transform: translateY(-20px);
+
+                .title {
+                    font-size: 3.5rem;
+                    padding: 2rem 0;
+                    width: 100%;
+                    text-align: end;
+                    // border: 1px solid red;
+                    flex-wrap: nowrap;
+                }
+                .github {
+                    padding: 10px;
+                    font-size: 2.5rem;
+                    i {
+                        font-size: 3rem;
+                        padding: 0 5px 0 0;
+                    }
+                }
+            }
+
+            .description {
+                padding: 0 10px;
+                line-height: 1.4;
+                font-size: 2.2rem;
             }
 
             .tech-list {
-                @include mixins.flex(row);
+                @include mixins.flex(row, flex-start, flex-start);
+                padding: 10px 0;
 
                 .tech {
                     text-align: center;
@@ -110,9 +148,12 @@ body {
                 @include mixins.flex();
 
                 .contribution {
-                    width: 90%;
-                    margin: 5px;
+                    width: 85%;
+                    // margin: 5px;
                     list-style: outside;
+                    margin: 10px;
+                    line-height: 1.4;
+                    font-size: 2.2rem;
                 }
             }
         }
