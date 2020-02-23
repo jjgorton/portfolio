@@ -13,7 +13,7 @@ window.onscroll = e => {
 
     let width = document.scrollingElement.clientWidth;
 
-    let percent = (position / height) * 400;
+    let percent = (position / height) * 300;
     console.log(position, '/', height, '*', width, '=', percent);
 
     // multiply by 4 because the width of the indicator

@@ -5,9 +5,10 @@
 body {
     @include mixins.flex();
     font-family: $font-primary;
-
+    background: $dark;
+    color: $white;
     padding-bottom: 60px;
-    border: 5px solid blue;
+    // border: 5px solid blue;
 
     header {
         // border: 1px solid red;
@@ -154,6 +155,34 @@ body {
                     margin: 10px;
                     line-height: 1.4;
                     font-size: 2.2rem;
+                }
+            }
+        }
+
+        .contact,
+        .follow {
+            min-height: 45vh;
+            @include mixins.flex(column, space-around);
+            font-size: 2rem;
+            // border: 1px solid red;
+
+            i {
+                font-size: 3.5rem;
+            }
+
+            .method {
+                // border: 1px solid red;
+                width: 90%;
+                padding: 20px 0;
+                @include mixins.flex(row, flex-start, flex-end);
+                flex-wrap: nowrap;
+                label {
+                    @include mixins.flex();
+                    width: 7.5rem;
+                }
+                p {
+                    margin-left: 3.5rem;
+                    // border: 1px solid red;
                 }
             }
         }
