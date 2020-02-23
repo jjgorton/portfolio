@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -137,6 +138,24 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+nav .scroll-position {
+  width: 20%;
+  height: 10px;
+  background: snow;
+  position: fixed;
+  bottom: 0;
+}
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -144,11 +163,6 @@ nav ul {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  background: red;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 nav ul .nav-item {
   font-size: 2rem;
@@ -161,7 +175,7 @@ nav ul .nav-item {
   border: 1px solid gray;
   background: lightblue;
   height: 50px;
-  width: 19%;
+  width: 20%;
 }
 nav ul .nav-item li,
 nav ul .nav-item a {
@@ -180,23 +194,40 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Lato";
   padding-bottom: 60px;
   border: 5px solid blue;
 }
 body header {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
+  height: 85vh;
+  padding: 5px;
 }
 body header .face {
+  padding-top: 21%;
   width: 50%;
   border-radius: 50%;
 }
 body header .name {
-  font-size: 5rem;
+  font-size: 6rem;
+  padding: 5px;
   color: blue;
+}
+body header .title {
+  font-size: 3rem;
+  padding: 5px;
+}
+body header .moto {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+body main {
+  padding: 5px;
 }
 body main section {
   display: flex;
@@ -204,19 +235,80 @@ body main section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
+  min-height: 85vh;
   font-size: 2rem;
+  padding: 2rem 1rem;
+  margin-bottom: 10px;
+}
+body main .skills {
+  background: rgba(0, 9, 128, 0.432);
+  justify-content: flex-start;
+  font-size: 2.5rem;
 }
 body main .skills ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: space-around;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
 }
 body main .skills ul li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48%;
+  color: blue;
+  padding: 15px 0;
+}
+body main .skills ul li i,
+body main .skills ul li .iconify {
+  color: blue;
+  font-size: 5rem;
+  padding: 3px;
+}
+body main .skills ul li svg {
+  width: 5.5rem;
+  padding: 3px;
+  fill: blue;
+}
+body main .projects {
+  background: rgba(128, 0, 128, 0.432);
+}
+body main .projects .project {
+  background: silver;
+  margin: 5px 0;
+}
+body main .projects .app-img {
+  max-width: 100%;
+  border: 1px solid red;
+}
+body main .projects .tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main .projects .tech-list .tech {
+  text-align: center;
   margin: 5px;
+  padding: 5px;
+  border-left: 1px solid gray;
+}
+body main .projects .contribution-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .projects .contribution-list .contribution {
+  width: 90%;
+  margin: 5px;
+  list-style: outside;
 }
 
 /*# sourceMappingURL=index.css.map */

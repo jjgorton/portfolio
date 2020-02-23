@@ -1,39 +1,118 @@
+@use 'variables' as *;
 @use 'mixins';
 @use 'nav';
 
 body {
     @include mixins.flex();
+    font-family: $font-primary;
 
     padding-bottom: 60px;
     border: 5px solid blue;
-    header {
-        @include mixins.flex(row);
 
+    header {
+        // border: 1px solid red;
+        @include mixins.flex(column, space-around);
+        text-align: center;
+        height: 85vh;
+        padding: 5px;
         .face {
+            padding-top: 21%;
             width: 50%;
             border-radius: 50%;
         }
 
         .name {
-            font-size: 5rem;
+            font-size: 6rem;
+            padding: 5px;
             color: blue;
+        }
+
+        .title {
+            font-size: 3rem;
+            padding: 5px;
+        }
+
+        .moto {
+            font-size: 2.5rem;
+            line-height: 1.5;
         }
     }
 
     main {
+        padding: 5px;
         section {
             @include mixins.flex();
-            border: 1px solid red;
+            min-height: 85vh;
+            // border: 1px solid red;
             font-size: 2rem;
+            padding: 2rem 1rem;
+            margin-bottom: 10px;
         }
 
         .skills {
+            background: rgba(0, 9, 128, 0.432);
+            justify-content: flex-start;
+
+            font-size: 2.5rem;
             ul {
-                @include mixins.flex(row);
-                align-content: space-around;
+                @include mixins.flex(row, space-around, flex-start);
+                // align-content: space-around;
+                height: 100%;
+                // border: 1px solid red;
 
                 li {
+                    @include mixins.flex();
+                    width: 48%;
+                    color: blue;
+                    padding: 15px 0;
+                    // border: 1px solid green;
+                    i,
+                    .iconify {
+                        color: blue;
+                        font-size: 5rem;
+                        padding: 3px;
+                    }
+                    svg {
+                        width: 5.5rem;
+                        padding: 3px;
+                        fill: blue;
+                    }
+                }
+            }
+        }
+
+        .projects {
+            background: rgba(128, 0, 128, 0.432);
+
+            .project {
+                background: silver;
+                margin: 5px 0;
+            }
+
+            .app-img {
+                max-width: 100%;
+                border: 1px solid red;
+            }
+
+            .tech-list {
+                @include mixins.flex(row);
+
+                .tech {
+                    text-align: center;
                     margin: 5px;
+                    padding: 5px;
+                    border-left: 1px solid gray;
+                    // border-right: 1px solid gray;
+                }
+            }
+
+            .contribution-list {
+                @include mixins.flex();
+
+                .contribution {
+                    width: 90%;
+                    margin: 5px;
+                    list-style: outside;
                 }
             }
         }
