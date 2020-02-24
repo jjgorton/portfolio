@@ -152,9 +152,10 @@ nav {
 nav .scroll-position {
   width: 25%;
   height: 10px;
-  background: rgba(0, 0, 255, 0.404);
+  background: #4ce6ba;
   position: fixed;
   bottom: 0;
+  transition: all 0.4s ease-in;
 }
 nav ul {
   display: flex;
@@ -171,7 +172,6 @@ nav ul .nav-item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: blue;
   border: 1px solid #0b0c10;
   background: #1f2833;
   height: 50px;
@@ -218,7 +218,7 @@ body header .name {
   font-family: "Krona One";
   font-size: 4.5rem;
   padding: 1rem 0;
-  color: blue;
+  color: #4ce6ba;
 }
 body header .title {
   font-size: 3rem;
@@ -227,9 +227,6 @@ body header .title {
 body header .moto {
   font-size: 2.5rem;
   line-height: 1.5;
-}
-body main {
-  padding: 5px;
 }
 body main section {
   display: flex;
@@ -246,9 +243,10 @@ body main section .section-heading {
   font-family: "Krona One";
   font-size: 3rem;
   width: 100%;
+  color: #1f2833;
 }
 body main .skills {
-  background: rgba(0, 9, 128, 0.432);
+  background: #c5c6c7;
   justify-content: flex-start;
   font-size: 2.5rem;
 }
@@ -267,25 +265,31 @@ body main .skills ul li {
   justify-content: center;
   align-items: center;
   width: 48%;
-  color: blue;
+  color: #1f6652;
   padding: 15px 0;
 }
 body main .skills ul li i,
 body main .skills ul li .iconify {
-  color: blue;
+  color: #1f6652;
   font-size: 5rem;
   padding: 3px;
 }
 body main .skills ul li svg {
   width: 5.5rem;
   padding: 3px;
-  fill: blue;
+  fill: #1f6652;
 }
 body main .projects {
-  background: rgba(128, 0, 128, 0.432);
+  background: #0b0c10;
+  color: #c5c6c7;
+}
+body main .projects .section-heading {
+  color: #1f6652;
 }
 body main .projects .project {
+  background: #1f2833;
   margin: 25px 0;
+  padding: 0 15px;
 }
 body main .projects .app-img {
   max-width: 100%;
@@ -299,7 +303,7 @@ body main .projects .project-heading {
 }
 body main .projects .project-heading .title {
   font-size: 3.5rem;
-  padding: 2rem 0;
+  padding: 1.5rem 15px 1.5rem 0;
   width: 100%;
   text-align: end;
   flex-wrap: nowrap;
@@ -311,6 +315,9 @@ body main .projects .project-heading .github {
 body main .projects .project-heading .github i {
   font-size: 3rem;
   padding: 0 5px 0 0;
+}
+body main .projects .project-heading a {
+  color: #4ce6ba;
 }
 body main .projects .description {
   padding: 0 10px;
@@ -361,6 +368,7 @@ body main .follow i {
 }
 body main .contact .method,
 body main .follow .method {
+  color: #c5c6c7;
   width: 90%;
   padding: 20px 0;
   display: flex;

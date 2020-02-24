@@ -26,7 +26,7 @@ body {
             font-family: $font-heading;
             font-size: 4.5rem;
             padding: 1rem 0;
-            color: blue;
+            color: $bright;
         }
 
         .title {
@@ -41,7 +41,7 @@ body {
     }
 
     main {
-        padding: 5px;
+        // padding: 5px;
 
         section {
             @include mixins.flex();
@@ -56,11 +56,12 @@ body {
                 font-size: 3rem;
                 // font-weight: bold;
                 width: 100%;
+                color: $medium-dark;
             }
         }
 
         .skills {
-            background: rgba(0, 9, 128, 0.432);
+            background: $white;
             justify-content: flex-start;
 
             font-size: 2.5rem;
@@ -73,30 +74,35 @@ body {
                 li {
                     @include mixins.flex();
                     width: 48%;
-                    color: blue;
+                    color: $medium-bright;
                     padding: 15px 0;
                     // border: 1px solid green;
                     i,
                     .iconify {
-                        color: blue;
+                        color: $medium-bright;
                         font-size: 5rem;
                         padding: 3px;
                     }
                     svg {
                         width: 5.5rem;
                         padding: 3px;
-                        fill: blue;
+                        fill: $medium-bright;
                     }
                 }
             }
         }
 
         .projects {
-            background: rgba(128, 0, 128, 0.432);
+            background: $dark;
+            color: $white;
+            .section-heading {
+                color: $medium-bright;
+            }
 
             .project {
-                // background: silver;
+                background: $medium-dark;
                 margin: 25px 0;
+                padding: 0 15px;
             }
 
             .app-img {
@@ -106,11 +112,12 @@ body {
 
             .project-heading {
                 @include mixins.flex(column, flex-start, flex-start);
+                // background: $dark;
                 // transform: translateY(-20px);
 
                 .title {
                     font-size: 3.5rem;
-                    padding: 2rem 0;
+                    padding: 1.5rem 15px 1.5rem 0;
                     width: 100%;
                     text-align: end;
                     // border: 1px solid red;
@@ -123,6 +130,10 @@ body {
                         font-size: 3rem;
                         padding: 0 5px 0 0;
                     }
+                }
+
+                a {
+                    color: $bright;
                 }
             }
 
@@ -172,6 +183,7 @@ body {
 
             .method {
                 // border: 1px solid red;
+                color: $white;
                 width: 90%;
                 padding: 20px 0;
                 @include mixins.flex(row, flex-start, flex-end);
