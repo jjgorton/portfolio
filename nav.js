@@ -1,7 +1,10 @@
 // Sets position of the of the navigation menu's
 // current selection indicator based on scroll position.
 
-//!!!! perfect scroll position not possible due to varied layout currently.
+// this is to check if the indicator needs to translate Y or X
+let dir = window.matchMedia('(min-width: 700px)');
+const check = media => (media.matches ? 'Y' : 'X');
+dir.addListener(check);
 
 const scroll = document.querySelector('.scroll-position');
 const aboutT = document.getElementById('about').getBoundingClientRect().top;
@@ -18,6 +21,7 @@ const contactB = document.getElementById('contact').getBoundingClientRect()
     .bottom;
 
 window.onscroll = e => {
+    console.log(check(dir));
     let position = window.scrollY;
     // console.log('pos', position);
     // let height =
@@ -25,31 +29,29 @@ window.onscroll = e => {
     //     document.scrollingElement.clientHeight;
 
     let width = document.scrollingElement.clientWidth;
-
     // let percent = (position / height) * 300;
-    // console.log(position, '/', height, '*', width, '=', percent);
 
-    // multiply by 4 because the width of the indicator
-    // is the length of each  of the 5 nav items
+    // check(dir) returns 'X' or 'Y' depending on screen size
+    // adding or subtracting integers for minor adjustment of scroll positions
     // console.log('about', aboutT, aboutB);
     if (position > aboutT && position < aboutB - 50) {
         // console.log('about if');
-        scroll.style.transform = `translateX(${0}%)`;
+        scroll.style.transform = `translate${check(dir)}(${0}%)`;
     }
     // console.log('skills', skillsT, skillsB);
     if (position > skillsT - 50 && position < skillsB - 50) {
         // console.log('skills if');
-        scroll.style.transform = `translateX(${100}%)`;
+        scroll.style.transform = `translate${check(dir)}(${100}%)`;
     }
     // console.log('project', projectsT, projectsB);
-    if (position > projectsT - 50 && position < projectsB - 250) {
+    if (position > projectsT - 50 && position < projectsB + 200) {
         // console.log('proj if');
-        scroll.style.transform = `translateX(${200}%)`;
+        scroll.style.transform = `translate${check(dir)}(${200}%)`;
     }
     // console.log('contact', contactT, contactB);
-    if (position > contactT - 250 && position < contactB) {
+    if (position > contactT + 200 && position < contactB) {
         // console.log('contact if');
-        scroll.style.transform = `translateX(${300}%)`;
+        scroll.style.transform = `translate${check(dir)}(${300}%)`;
     }
 };
 
