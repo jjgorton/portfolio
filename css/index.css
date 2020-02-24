@@ -152,9 +152,10 @@ nav {
 nav .scroll-position {
   width: 25%;
   height: 10px;
-  background: #66fcf1;
+  background: #4ce6ba;
   position: fixed;
   bottom: 0;
+  transition: all 0.4s ease-in;
 }
 nav ul {
   display: flex;
@@ -217,7 +218,7 @@ body header .name {
   font-family: "Krona One";
   font-size: 4.5rem;
   padding: 1rem 0;
-  color: #66fcf1;
+  color: #4ce6ba;
 }
 body header .title {
   font-size: 3rem;
@@ -264,26 +265,26 @@ body main .skills ul li {
   justify-content: center;
   align-items: center;
   width: 48%;
-  color: #45a29e;
+  color: #1f6652;
   padding: 15px 0;
 }
 body main .skills ul li i,
 body main .skills ul li .iconify {
-  color: #45a29e;
+  color: #1f6652;
   font-size: 5rem;
   padding: 3px;
 }
 body main .skills ul li svg {
   width: 5.5rem;
   padding: 3px;
-  fill: #45a29e;
+  fill: #1f6652;
 }
 body main .projects {
   background: #0b0c10;
   color: #c5c6c7;
 }
 body main .projects .section-heading {
-  color: #45a29e;
+  color: #1f6652;
 }
 body main .projects .project {
   background: #1f2833;
@@ -316,7 +317,7 @@ body main .projects .project-heading .github i {
   padding: 0 5px 0 0;
 }
 body main .projects .project-heading a {
-  color: #66fcf1;
+  color: #4ce6ba;
 }
 body main .projects .description {
   padding: 0 10px;
