@@ -143,7 +143,7 @@ html {
 }
 
 nav {
-  background: #1f2833;
+  background: #073763;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -153,7 +153,7 @@ nav {
 nav .scroll-position {
   width: 25%;
   height: 10px;
-  background: #4ce6ba;
+  background: #69c4ee;
   position: fixed;
   bottom: 0;
   transition: all 0.4s ease-in;
@@ -173,7 +173,7 @@ nav ul .nav-item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #0b0c10;
+  border: 1px solid #1f2833;
   background: none;
   height: 50px;
   width: 25%;
@@ -193,7 +193,7 @@ nav ul .nav-item a {
 
 body {
   font-family: "Lato";
-  background: #0b0c10;
+  background: #1f2833;
   color: #fdfdfd;
   padding-bottom: 60px;
   margin: 0 auto;
@@ -207,7 +207,7 @@ body header {
   text-align: center;
   min-height: 85vh;
   padding: 5px;
-  background: #0b0c10;
+  background: #1f2833;
   max-width: 1300px;
   margin: 0 auto;
 }
@@ -232,7 +232,7 @@ body header .name {
   font-family: "Krona One";
   font-size: 4.5rem;
   padding: 1rem 0;
-  color: #4ce6ba;
+  color: #69c4ee;
 }
 @media (min-width: 700px) {
   body header .name {
@@ -278,7 +278,7 @@ body main section .section-heading {
   font-family: "Krona One";
   font-size: 3rem;
   width: 100%;
-  color: #1f6652;
+  color: #4592b6;
 }
 @media (min-width: 700px) {
   body main section .section-heading {
@@ -315,7 +315,7 @@ body main .skills ul li {
   justify-content: center;
   align-items: center;
   width: 48%;
-  color: #1f6652;
+  color: #4592b6;
   padding: 15px 0;
 }
 @media (min-width: 700px) {
@@ -326,30 +326,30 @@ body main .skills ul li {
 }
 body main .skills ul li i,
 body main .skills ul li .iconify {
-  color: #1f6652;
+  color: #4592b6;
   font-size: 5rem;
   padding: 3px;
 }
 body main .skills ul li svg {
   width: 5.5rem;
   padding: 3px;
-  fill: #1f6652;
+  fill: #4592b6;
 }
 body main .projects-container {
-  background: #0b0c10;
+  background: #1f2833;
   width: 100%;
 }
 body main .projects {
-  background: #0b0c10;
+  background: #1f2833;
   color: #fdfdfd;
   max-width: 1300px;
 }
 body main .projects .section-heading {
-  color: #1f6652;
+  color: #4592b6;
   padding-bottom: initial;
 }
 body main .projects .project {
-  background: #1f2833;
+  background: #073763;
   margin: 25px 0;
   padding: 0 15px;
   display: flex;
@@ -388,7 +388,7 @@ body main .projects .project-heading .github i {
   padding: 0 5px 0 0;
 }
 body main .projects .project-heading a {
-  color: #4ce6ba;
+  color: #69c4ee;
 }
 body main .projects .description {
   padding: 10px;
@@ -425,7 +425,7 @@ body main .projects .contribution-list .contribution {
 }
 body main .contact-container {
   width: 100%;
-  background: #1f6652;
+  background: #4592b6;
 }
 body main .contact,
 body main .follow {
@@ -446,7 +446,7 @@ body main .follow {
 }
 body main .contact .section-heading,
 body main .follow .section-heading {
-  color: #0b0c10;
+  color: #1f2833;
 }
 body main .contact i,
 body main .follow i {
