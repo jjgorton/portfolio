@@ -3,11 +3,12 @@
 @use 'nav';
 
 body {
-    @include mixins.flex();
+    // @include mixins.flex();
     font-family: $font-primary;
     background: $dark;
     color: $white;
     padding-bottom: 60px;
+    margin: 0 auto;
     // border: 5px solid blue;
 
     // @media (min-width: $desktop) {
@@ -19,8 +20,12 @@ body {
         // border: 1px solid red;
         @include mixins.flex(column, space-around);
         text-align: center;
-        height: 85vh;
+        min-height: 85vh;
         padding: 5px;
+        background: $dark;
+        max-width: $maxWidth;
+        margin: 0 auto;
+        // border: 1px solid red;
 
         @media (min-width: $desktop) {
             flex-direction: row;
@@ -33,6 +38,7 @@ body {
 
             @media (min-width: $desktop) {
                 padding-top: initial;
+                padding: 20px;
                 width: 30%;
             }
         }
@@ -42,11 +48,20 @@ body {
             font-size: 4.5rem;
             padding: 1rem 0;
             color: $bright;
+
+            @media (min-width: $desktop) {
+                font-size: 6.5rem;
+                padding: 0 20px;
+            }
         }
 
         .title {
             font-size: 3rem;
             padding: 5px;
+
+            @media (min-width: $desktop) {
+                padding: 15px;
+            }
         }
 
         .moto {
@@ -71,19 +86,32 @@ body {
             padding: 2rem 1rem;
             margin-bottom: 10px;
 
+            margin: 0 auto;
+            // width: 100%;
+
             .section-heading {
                 font-family: $font-heading;
                 font-size: 3rem;
                 // font-weight: bold;
                 width: 100%;
                 color: $medium-bright;
+
+                @media (min-width: $desktop) {
+                    padding: 5rem 0 4rem 0;
+                }
             }
         }
 
+        .skills-container {
+            background: $white;
+            width: 100%;
+            @include mixins.flex();
+        }
         .skills {
             background: $white;
             justify-content: flex-start;
             font-size: 2.5rem;
+            max-width: $maxWidth;
 
             // @media (min-width: $desktop) {
             //     max-height: 85vh;
@@ -127,11 +155,18 @@ body {
             }
         }
 
+        .projects-container {
+            background: $dark;
+            width: 100%;
+        }
         .projects {
             background: $dark;
             color: $white;
+            max-width: $maxWidth;
+
             .section-heading {
                 color: $medium-bright;
+                padding-bottom: initial;
             }
 
             .project {
@@ -142,6 +177,7 @@ body {
 
                 @media (min-width: $desktop) {
                     padding: 20px;
+                    // max-width: 1200px;
                     // border: 1px solid red;
                 }
             }
@@ -179,7 +215,7 @@ body {
             }
 
             .description {
-                padding: 0 10px;
+                padding: 10px;
                 line-height: 1.4;
                 font-size: 2.2rem;
             }
@@ -211,12 +247,27 @@ body {
             }
         }
 
+        .contact-container {
+            width: 100%;
+            background: $medium-bright;
+        }
+
         .contact,
         .follow {
+            max-width: $maxWidth;
             min-height: 45vh;
             @include mixins.flex(column, space-around);
             font-size: 2rem;
             // border: 1px solid red;
+
+            @media (min-width: $desktop) {
+                flex-direction: row;
+                // border: 1px solid red;
+            }
+
+            .section-heading {
+                color: $dark;
+            }
 
             i {
                 font-size: 3.5rem;
@@ -225,7 +276,7 @@ body {
             .method {
                 // border: 1px solid red;
                 color: $white;
-                width: 90%;
+                width: 360px;
                 padding: 20px 0;
                 @include mixins.flex(row, flex-start, flex-end);
                 flex-wrap: nowrap;
@@ -235,6 +286,11 @@ body {
                 }
                 p {
                     margin-left: 3.5rem;
+                    // border: 1px solid red;
+                }
+
+                @media (min-width: $desktop) {
+                    width: 386px;
                     // border: 1px solid red;
                 }
             }
