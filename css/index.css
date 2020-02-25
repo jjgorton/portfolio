@@ -278,7 +278,7 @@ body main section .section-heading {
   font-family: "Krona One";
   font-size: 3rem;
   width: 100%;
-  color: #69c4ee;
+  color: #4592b6;
 }
 @media (min-width: 700px) {
   body main section .section-heading {
@@ -315,7 +315,7 @@ body main .skills ul li {
   justify-content: center;
   align-items: center;
   width: 48%;
-  color: #69c4ee;
+  color: #4592b6;
   padding: 15px 0;
 }
 @media (min-width: 700px) {
@@ -326,14 +326,14 @@ body main .skills ul li {
 }
 body main .skills ul li i,
 body main .skills ul li .iconify {
-  color: #69c4ee;
+  color: #4592b6;
   font-size: 5rem;
   padding: 3px;
 }
 body main .skills ul li svg {
   width: 5.5rem;
   padding: 3px;
-  fill: #69c4ee;
+  fill: #4592b6;
 }
 body main .projects-container {
   background: #1f2833;
@@ -345,7 +345,7 @@ body main .projects {
   max-width: 1300px;
 }
 body main .projects .section-heading {
-  color: #69c4ee;
+  color: #4592b6;
   padding-bottom: initial;
 }
 body main .projects .project {
@@ -425,7 +425,7 @@ body main .projects .contribution-list .contribution {
 }
 body main .contact-container {
   width: 100%;
-  background: #69c4ee;
+  background: #4592b6;
 }
 body main .contact,
 body main .follow {

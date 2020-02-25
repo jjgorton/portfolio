@@ -30,15 +30,15 @@ const contactB = contact.getBoundingClientRect().bottom;
 navItems[3].style.color = 'blue';
 
 window.onscroll = e => {
-    console.log(check(dir));
-    console.log('outer', navItems[3].style.color, navItems[3]);
+    // console.log(check(dir));
+    // console.log('outer', navItems[3].style.color, navItems[3]);
     let position = window.scrollY;
     // console.log('pos', position);
     // let height =
     //     document.scrollingElement.scrollHeight -
     //     document.scrollingElement.clientHeight;
 
-    let width = document.scrollingElement.clientWidth;
+    // let width = document.scrollingElement.clientWidth;
     // let percent = (position / height) * 300;
 
     // check(dir) returns 'X' or 'Y' depending on screen size
@@ -47,26 +47,26 @@ window.onscroll = e => {
     if (position > aboutT && position < aboutB - 50) {
         // console.log('about if');
         scroll.style.transform = `translate${check(dir)}(${0}%)`;
-        navItems[0].style.color = '#1f2833';
+        // navItems[0].style.color = '#1f2833';
     }
     // console.log('skills', skillsT, skillsB);
     if (position > skillsT - 50 && position < skillsB - 50) {
         // console.log('skills if');
         scroll.style.transform = `translate${check(dir)}(${100}%)`;
-        navItems[1].style.color = '#1f2833';
+        // navItems[1].style.color = '#1f2833';
     }
     // console.log('project', projectsT, projectsB);
-    if (position > projectsT - 50 && position < projectsB + 200) {
+    if (position > projectsT - 50 && position < contactT + contactT * 0.3) {
         // console.log('proj if');
         scroll.style.transform = `translate${check(dir)}(${200}%)`;
-        navItems[2].style.color = '#1f2833';
+        // navItems[2].style.color = '#1f2833';
     }
-    // console.log('contact', contactT, contactB);
-    if (position > contactT + 200 && position < contactB) {
+    // console.log('contact', contactT + contactT * 0.3, contactB);
+    if (position > contactT + contactT * 0.3) {
         // console.log('contact if');
         scroll.style.transform = `translate${check(dir)}(${300}%)`;
-        navItems[3].style.color = '#1f2833';
-        console.log(contact.style.color);
+        // navItems[3].style.color = '#1f2833';
+        // console.log(contact.style.color);
     }
 };
 
@@ -77,9 +77,9 @@ window.onscroll = e => {
 //     });
 // });
 
-function grabInside(element) {
-    let str = element.innerHTML;
-}
+// function grabInside(element) {
+//     let str = element.innerHTML;
+// }
 
 // function navIndicator(item, index) {
 //     let str = item.innerHTML.split('"')[1];
