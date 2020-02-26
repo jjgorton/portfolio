@@ -5,3 +5,10 @@
     justify-content: $j;
     align-items: $a;
 }
+
+@mixin link {
+    transition: transform 1s ease-out;
+    :hover {
+        transform: translateY(5px);
+    }
+}
