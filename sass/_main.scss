@@ -29,24 +29,31 @@ body {
 
         @media (min-width: $desktop) {
             flex-direction: row;
+            justify-content: center;
+        }
+
+        .tittle-container {
+            @media (min-width: $desktop) {
+                margin: 7% 0 0 7%;
+            }
         }
 
         .face {
-            padding-top: 21%;
+            padding: 11% 0 11% 0;
             width: 50%;
             border-radius: 50%;
 
             @media (min-width: $desktop) {
-                padding-top: initial;
+                // padding-top: initial;
                 padding: 20px;
-                width: 30%;
+                width: 25%;
             }
         }
 
         .name {
             font-family: $font-heading;
             font-size: 4.5rem;
-            padding: 1rem 0;
+            padding: 1rem 0 2rem 0;
             color: $bright;
 
             @media (min-width: $desktop) {
@@ -60,17 +67,38 @@ body {
             padding: 5px;
 
             @media (min-width: $desktop) {
-                padding: 15px;
+                padding: 10px;
             }
         }
 
         .moto {
             font-size: 2.5rem;
             line-height: 1.5;
-            @include mixins.flex(row);
-            width: 100%;
+            // @include mixins.flex(row);
+            // width: 100%;
+            padding: 5rem 0.5rem;
+
             p {
-                padding: 0.5rem;
+                .left {
+                    padding-right: 2rem;
+                    font-size: 4rem;
+                    transform: translateY(-10px);
+                }
+
+                .right {
+                    padding-left: 2rem;
+                    font-size: 4rem;
+                    transform: translateY(15px);
+                }
+
+                // @media (min-width: $desktop) {
+                //     width: 50%;
+                // }
+                padding: 0 0.5rem;
+
+                em {
+                    font-style: italic;
+                }
             }
         }
     }
