@@ -1,14 +1,11 @@
 // adding simple hover animations to clickable items
 
 const links = document.querySelectorAll('a');
-// console.log(links);
 
 links.forEach(link => {
     let color = getStyle(link, 'color');
-    console.log(color);
     // let newColor = LightenDarkenColor(color, 16);
     let newColor = '#a7e3ff';
-    console.log(newColor);
 
     //move up
     link.style.transition = 'all 0.2s ease-out';
@@ -17,31 +14,21 @@ links.forEach(link => {
         link.style.color = newColor;
     });
     link.addEventListener('mouseleave', () => {
-        console.log('leave');
         link.style.transform = 'translateY(0px)';
         link.style.color = color;
     });
 });
 
 const title = document.querySelectorAll('.title');
-// console.log(title);
 
 title.forEach(link => {
-    //change color
-    // let color = getStyle(link, 'color');
-    // console.log(color);
-    // let newColor = LightenDarkenColor(color, -19);
-    // console.log(newColor);
-
     //move
     link.style.transition = 'transform 0.2s ease-out';
     link.addEventListener('mouseenter', () => {
         link.style.transform = 'translateY(-3px)';
-        // link.style.color = newColor;
     });
     link.addEventListener('mouseleave', () => {
         link.style.transform = 'translateY(0px)';
-        // link.style.color = color;
     });
 });
 
