@@ -277,7 +277,8 @@ body {
 
         .contact-container {
             width: 100%;
-            background: $medium-bright;
+            // background: $medium-bright;
+            background: #315368; //better contrast for accessability
         }
 
         .contact,
@@ -294,7 +295,7 @@ body {
             }
 
             .section-heading {
-                color: $dark;
+                color: $white;
             }
 
             i {
@@ -308,7 +309,7 @@ body {
                 padding: 20px 0;
                 @include mixins.flex(row, flex-start, flex-end);
                 flex-wrap: nowrap;
-                label {
+                .label {
                     @include mixins.flex();
                     width: 7.5rem;
                 }

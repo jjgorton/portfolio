@@ -438,7 +438,7 @@ body main .projects .contribution-list .contribution {
 }
 body main .contact-container {
   width: 100%;
-  background: #4592b6;
+  background: #315368;
 }
 body main .contact,
 body main .follow {
@@ -459,7 +459,7 @@ body main .follow {
 }
 body main .contact .section-heading,
 body main .follow .section-heading {
-  color: #1f2833;
+  color: #fdfdfd;
 }
 body main .contact i,
 body main .follow i {
@@ -477,8 +477,8 @@ body main .follow .method {
   align-items: flex-end;
   flex-wrap: nowrap;
 }
-body main .contact .method label,
-body main .follow .method label {
+body main .contact .method .label,
+body main .follow .method .label {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
