@@ -133,7 +133,7 @@ body {
         .skills-container {
             background: $white;
             width: 100%;
-            @include mixins.flex();
+            // @include mixins.flex(); ---- took out due to firefox issues
         }
         .skills {
             background: $white;

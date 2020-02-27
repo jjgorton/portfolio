@@ -301,11 +301,6 @@ body main section .section-heading {
 body main .skills-container {
   background: #fdfdfd;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 body main .skills {
   background: #fdfdfd;
