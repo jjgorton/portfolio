@@ -366,9 +366,23 @@ body main .projects .project {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 700px) {
+@media (min-width: 1100px) {
   body main .projects .project {
     padding: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  body main .projects .project .desc-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    margin-left: 2rem;
+    border-left: 4px solid #4592b6;
+    border-radius: 10px;
+    width: 45%;
   }
 }
 body main .projects .app-img {
@@ -381,11 +395,24 @@ body main .projects .project-heading {
   justify-content: flex-start;
   align-items: flex-start;
 }
+@media (min-width: 1100px) {
+  body main .projects .project-heading {
+    flex-direction: row;
+    width: 45%;
+  }
+}
 body main .projects .project-heading .title {
   font-size: 3.5rem;
   padding: 1.5rem 15px 1.5rem 0;
   width: 100%;
   flex-wrap: nowrap;
+}
+@media (min-width: 1100px) {
+  body main .projects .project-heading .title {
+    letter-spacing: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 4rem;
+  }
 }
 body main .projects .project-heading .github {
   padding: 10px;
@@ -394,6 +421,16 @@ body main .projects .project-heading .github {
 body main .projects .project-heading .github i {
   font-size: 3rem;
   padding: 0 5px 0 0;
+}
+@media (min-width: 1100px) {
+  body main .projects .project-heading .github {
+    padding: 3.7rem 0 0 0;
+  }
+}
+@media (min-width: 1100px) {
+  body main .projects .project-heading .p1 {
+    padding: 10px 0 0 0;
+  }
 }
 body main .projects .project-heading a {
   color: #69c4ee;
@@ -450,6 +487,7 @@ body main .follow {
   body main .contact,
 body main .follow {
     flex-direction: row;
+    padding-bottom: 4%;
   }
 }
 body main .contact .section-heading,
