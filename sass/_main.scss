@@ -203,10 +203,26 @@ body {
                 padding: 0 15px;
                 @include mixins.flex();
 
-                @media (min-width: $desktop) {
+                @media (min-width: $tablet) {
                     padding: 20px;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
                     // max-width: 1200px;
                     // border: 1px solid red;
+
+                    // .description {
+                    //     order: -1;
+                    // }
+
+                    .desc-container {
+                        @include mixins.flex();
+                        // border: 1px solid red;
+                        padding-left: 1rem;
+                        margin-left: 2rem;
+                        border-left: 4px solid $medium-bright;
+                        border-radius: 10px;
+                        width: 45%;
+                    }
                 }
             }
 
@@ -219,6 +235,10 @@ body {
                 @include mixins.flex(column, flex-start, flex-start);
                 // background: $dark;
                 // transform: translateY(-20px);
+                @media (min-width: $tablet) {
+                    flex-direction: row;
+                    width: 45%;
+                }
 
                 .title {
                     font-size: 3.5rem;
@@ -227,6 +247,11 @@ body {
                     // text-align: end;
                     // border: 1px solid red;
                     flex-wrap: nowrap;
+                    @media (min-width: $tablet) {
+                        letter-spacing: 0.5rem;
+                        padding-top: 0;
+                        padding-bottom: 4rem;
+                    }
                 }
                 .github {
                     padding: 10px;
@@ -234,6 +259,15 @@ body {
                     i {
                         font-size: 3rem;
                         padding: 0 5px 0 0;
+                    }
+                    @media (min-width: $tablet) {
+                        padding: 3.7rem 0 0 0;
+                    }
+                }
+                .p1 {
+                    @media (min-width: $tablet) {
+                        padding: 10px 0 0 0;
+                        // color: red;
                     }
                 }
 
@@ -291,6 +325,7 @@ body {
 
             @media (min-width: $desktop) {
                 flex-direction: row;
+                padding-bottom: 4%;
                 // border: 1px solid red;
             }
 
