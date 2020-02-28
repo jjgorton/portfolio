@@ -67,27 +67,30 @@ body {
             padding: 5px;
 
             @media (min-width: $desktop) {
-                padding: 10px;
+                padding: 1rem 0;
             }
         }
 
         .moto {
-            font-size: 2.5rem;
-            line-height: 1.5;
+            font-size: 2rem;
+            line-height: 2;
             // @include mixins.flex(row);
             // width: 100%;
             padding: 5rem 0.5rem;
+            @media (min-width: $desktop) {
+                width: 80%;
+            }
 
             p {
                 .left {
                     padding-right: 2rem;
-                    font-size: 4rem;
+                    font-size: 3rem;
                     transform: translateY(-10px);
                 }
 
                 .right {
                     padding-left: 2rem;
-                    font-size: 4rem;
+                    font-size: 3rem;
                     transform: translateY(15px);
                 }
 
@@ -207,6 +210,7 @@ body {
                     padding: 20px;
                     flex-direction: row;
                     flex-wrap: nowrap;
+                    justify-content: space-evenly;
                     // max-width: 1200px;
                     // border: 1px solid red;
 
@@ -217,7 +221,7 @@ body {
                     .desc-container {
                         @include mixins.flex();
                         // border: 1px solid red;
-                        padding-left: 1rem;
+                        padding-left: 3rem;
                         margin-left: 2rem;
                         border-left: 4px solid $medium-bright;
                         border-radius: 10px;
