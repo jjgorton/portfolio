@@ -455,10 +455,9 @@ body main .projects .tech-list {
   padding: 10px 0;
 }
 body main .projects .tech-list .tech {
-  text-align: center;
   margin: 5px;
-  padding: 5px;
-  border-left: 1px solid gray;
+  padding-right: 10px;
+  border-right: 2px solid #fdfdfd;
 }
 body main .projects .contribution-list {
   display: flex;
