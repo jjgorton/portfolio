@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-162983711-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-162983711-1');
+        </script>
+
         <meta charset="utf-8" />
         <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -172,7 +187,11 @@
                                 focusable="false"
                                 width="1.83em"
                                 height="1em"
-                                style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                style="
+                                    -ms-transform: rotate(360deg);
+                                    -webkit-transform: rotate(360deg);
+                                    transform: rotate(360deg);
+                                "
                                 preserveAspectRatio="xMidYMid meet"
                                 viewBox="0 0 256 140"
                                 class="iconify"
