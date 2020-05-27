@@ -528,6 +528,29 @@ body main .contact .method p,
 body main .follow .method p {
   margin-left: 3.5rem;
 }
+body main .contact .method .aws,
+body main .follow .method .aws {
+  width: 7.5rem;
+}
+body main .contact .method .aws-title,
+body main .follow .method .aws-title {
+  text-align: center;
+  line-height: 2.5rem;
+}
+body main .contact .method .fcc,
+body main .follow .method .fcc {
+  text-align: center;
+}
+body main .contact .method .fcc .fab,
+body main .follow .method .fcc .fab {
+  text-decoration: none;
+  font-size: 6rem;
+}
+body main .contact .method .fcc .fcc-title,
+body main .follow .method .fcc .fcc-title {
+  font-size: 1.8rem;
+  margin: 0px;
+}
 @media (min-width: 700px) {
   body main .contact .method,
 body main .follow .method {

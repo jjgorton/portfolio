@@ -357,6 +357,29 @@ body {
                     // border: 1px solid red;
                 }
 
+                .aws {
+                    width: 7.5rem;
+                }
+                .aws-title {
+                    text-align: center;
+                    line-height: 2.5rem;
+                }
+                .fcc {
+                    // display: flex;
+                    // flex-direction: column;
+                    // justify-content: center;
+                    // align-items: center;
+                    text-align: center;
+                    .fab {
+                        text-decoration: none;
+                        font-size: 6rem;
+                    }
+                    .fcc-title {
+                        font-size: 1.8rem;
+                        margin: 0px;
+                    }
+                }
+
                 @media (min-width: $desktop) {
                     width: 386px;
                     // border: 1px solid red;
