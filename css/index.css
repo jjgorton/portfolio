@@ -330,6 +330,7 @@ body main .skills ul li {
   width: 48%;
   color: #4592b6;
   padding: 15px 0;
+  text-align: center;
 }
 @media (min-width: 700px) {
   body main .skills ul li {
@@ -527,6 +528,31 @@ body main .follow .method .label {
 body main .contact .method p,
 body main .follow .method p {
   margin-left: 3.5rem;
+}
+body main .contact .method .aws,
+body main .follow .method .aws {
+  width: 7.5rem;
+}
+body main .contact .method .aws-title,
+body main .follow .method .aws-title {
+  text-align: center;
+  line-height: 2.5rem;
+}
+body main .contact .method .fcc,
+body main .follow .method .fcc {
+  width: 7.5rem;
+  text-align: center;
+}
+body main .contact .method .fcc .fab,
+body main .follow .method .fcc .fab {
+  text-decoration: none;
+  font-size: 6rem;
+}
+body main .contact .method .fcc .fcc-title,
+body main .follow .method .fcc .fcc-title {
+  font-size: 1.8rem;
+  margin: 0px;
+  transform: translateX(-2.3rem);
 }
 @media (min-width: 700px) {
   body main .contact .method,

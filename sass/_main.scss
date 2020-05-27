@@ -164,6 +164,7 @@ body {
                     width: 48%;
                     color: $medium-bright;
                     padding: 15px 0;
+                    text-align: center;
                     // border: 1px solid green;
 
                     @media (min-width: $desktop) {
@@ -355,6 +356,28 @@ body {
                 p {
                     margin-left: 3.5rem;
                     // border: 1px solid red;
+                }
+
+                .aws {
+                    width: 7.5rem;
+                }
+                .aws-title {
+                    text-align: center;
+                    line-height: 2.5rem;
+                }
+                .fcc {
+                    // border: 1px solid red;
+                    width: 7.5rem;
+                    text-align: center;
+                    .fab {
+                        text-decoration: none;
+                        font-size: 6rem;
+                    }
+                    .fcc-title {
+                        font-size: 1.8rem;
+                        margin: 0px;
+                        transform: translateX(-2.3rem);
+                    }
                 }
 
                 @media (min-width: $desktop) {
