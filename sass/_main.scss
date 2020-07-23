@@ -188,12 +188,12 @@ body {
         }
 
         .projects-container {
-            background: $dark;
+            background: $white;
             width: 100%;
         }
         .projects {
-            background: $dark;
-            color: $white;
+            background: $white;
+            color: $dark;
             max-width: $maxWidth;
 
             .section-heading {
@@ -205,6 +205,7 @@ body {
                 background: $medium-dark;
                 margin: 25px 0;
                 padding: 0 15px;
+                border-radius: 15px;
                 @include mixins.flex();
 
                 @media (min-width: $tablet) {
@@ -224,7 +225,7 @@ body {
                         // border: 1px solid red;
                         padding-left: 3rem;
                         margin-left: 2rem;
-                        border-left: 4px solid $medium-bright;
+                        // border-left: 4px solid $medium-bright;
                         border-radius: 10px;
                         width: 45%;
                     }
@@ -284,13 +285,13 @@ body {
             .description {
                 padding: 10px;
                 line-height: 1.4;
-                font-size: 2.2rem;
+                font-size: 1.5rem;
             }
 
             .tech-list {
                 @include mixins.flex(row, flex-start, flex-start);
                 padding: 10px 0;
-
+                font-size: 1.5rem;
                 .tech {
                     // text-align: center;
                     margin: 5px;
@@ -309,7 +310,7 @@ body {
                     list-style: outside;
                     margin: 10px;
                     line-height: 1.4;
-                    font-size: 2.2rem;
+                    font-size: 1.5rem;
                 }
             }
         }
