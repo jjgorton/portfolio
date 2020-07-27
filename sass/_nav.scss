@@ -9,7 +9,7 @@ nav {
     // @include mixins.flex(column, flex-end);
     // height: 60px;
     // background: red;
-    background: $medium-dark;
+    background: $dark;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -24,8 +24,9 @@ nav {
     //  }
 
     .scroll-position {
-        width: 25%;
+        width: 20%;
         height: 10px;
+        border-radius: 15px;
         background: $bright;
         position: fixed;
         bottom: 0;
@@ -59,10 +60,10 @@ nav {
             font-size: 2rem;
             @include mixins.flex();
             // color: $bright;
-            border: 1px solid $dark;
+            border-top: 1px solid #315368;
             background: none;
             height: 50px;
-            width: 25%;
+            width: 20%;
 
             // @media (min-width: $desktop) {
             //     width: 100%;

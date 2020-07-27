@@ -143,7 +143,7 @@ html {
 }
 
 nav {
-  background: #1f283328;
+  background: #1f2833;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -151,8 +151,9 @@ nav {
   z-index: 2;
 }
 nav .scroll-position {
-  width: 25%;
+  width: 20%;
   height: 10px;
+  border-radius: 15px;
   background: #69c4ee;
   position: fixed;
   bottom: 0;
@@ -173,10 +174,10 @@ nav ul .nav-item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #1f2833;
+  border-top: 1px solid #315368;
   background: none;
   height: 50px;
-  width: 25%;
+  width: 20%;
 }
 nav ul .nav-item li,
 nav ul .nav-item a {
@@ -230,7 +231,7 @@ body header .face {
 @media (min-width: 700px) {
   body header .face {
     padding: 20px;
-    width: 25%;
+    width: 20%;
   }
 }
 body header .name {
@@ -242,7 +243,7 @@ body header .name {
 @media (min-width: 700px) {
   body header .name {
     font-size: 6.5rem;
-    padding: 0 20px;
+    padding: 2.5rem 20px;
   }
 }
 body header .title {
@@ -251,13 +252,13 @@ body header .title {
 }
 @media (min-width: 700px) {
   body header .title {
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
 }
 body header .moto {
   font-size: 2rem;
   line-height: 2;
-  padding: 5rem 0.5rem;
+  padding: 2rem 0.5rem;
 }
 @media (min-width: 700px) {
   body header .moto {
@@ -308,10 +309,10 @@ body main .skills-container {
   width: 100%;
 }
 body main .skills {
-  background: #fdfdfd;
-  justify-content: flex-start;
-  font-size: 2.5rem;
-  max-width: 1300px;
+  display: block;
+  background: #1f283328;
+  font-size: 1.5rem;
+  min-height: initial;
 }
 body main .skills ul {
   display: flex;
@@ -319,6 +320,7 @@ body main .skills ul {
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+  flex-wrap: nowrap;
   height: 100%;
 }
 body main .skills ul li {
@@ -341,11 +343,11 @@ body main .skills ul li {
 body main .skills ul li i,
 body main .skills ul li .iconify {
   color: #4592b6;
-  font-size: 5rem;
+  font-size: 3rem;
   padding: 3px;
 }
 body main .skills ul li svg {
-  width: 5.5rem;
+  width: 3rem;
   padding: 3px;
   fill: #4592b6;
 }
@@ -355,7 +357,7 @@ body main .projects-container {
 }
 body main .projects {
   background: #fdfdfd;
-  color: #1f2833;
+  color: #285368;
   max-width: 1300px;
 }
 body main .projects .section-heading {
@@ -367,6 +369,7 @@ body main .projects .project {
   margin: 25px 0;
   padding: 0 15px;
   border-radius: 15px;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -440,7 +443,7 @@ body main .projects .project-heading .github i {
   }
 }
 body main .projects .project-heading a {
-  color: #69c4ee;
+  color: #4592b6;
 }
 body main .projects .description {
   padding: 10px;
