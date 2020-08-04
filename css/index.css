@@ -198,6 +198,49 @@ body {
   color: #fdfdfd;
   padding-bottom: 60px;
   margin: 0 auto;
+  overflow-x: hidden;
+}
+body .bck-shape-one {
+  width: 80vw;
+  height: 80vw;
+  background: #fdfdfd;
+  position: absolute;
+  z-index: 0;
+  right: -60vw;
+  opacity: 0.1;
+  transform: rotateZ(130deg);
+}
+body .bck-shape-two {
+  width: 100vw;
+  height: 80vw;
+  background: #fdfdfd;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  opacity: 0.05;
+  transform: rotateZ(80deg);
+}
+body .bck-shape-three {
+  width: 100vw;
+  height: 80vw;
+  background: #fdfdfd;
+  position: absolute;
+  z-index: 0;
+  top: 261vh;
+  left: -60vw;
+  opacity: 0.05;
+  transform: rotateZ(-130deg);
+}
+body .bck-shape-four {
+  width: 117vw;
+  height: 83vw;
+  background: #fdfdfd;
+  position: absolute;
+  z-index: 0;
+  top: 247vh;
+  left: 262px;
+  opacity: 0.05;
+  transform: rotateZ(-50deg);
 }
 body header {
   display: flex;
