@@ -15,6 +15,51 @@ body {
     //     padding-bottom: initial;
     //     padding-left: 25%;
     // }
+    overflow-x: hidden;
+
+    .bck-shape-one {
+        width: 80vw;
+        height: 80vw;
+        background: $white;
+        position: absolute;
+        z-index: 0;
+        transform: translateX(25px);
+        // right: -60vw;
+        opacity: 0.1;
+        transform: rotateZ(130deg);
+    }
+    .bck-shape-two {
+        width: 100vw;
+        height: 80vw;
+        background: $white;
+        position: absolute;
+        z-index: 0;
+        right: 0;
+        opacity: 0.05;
+        transform: rotateZ(80deg);
+    }
+    .bck-shape-three {
+        width: 100vw;
+        height: 80vw;
+        background: $white;
+        position: absolute;
+        z-index: 0;
+        top: 261vh;
+        left: -60vw;
+        opacity: 0.05;
+        transform: rotateZ(-130deg);
+    }
+    .bck-shape-four {
+        width: 117vw;
+        height: 83vw;
+        background: $white;
+        position: absolute;
+        z-index: 0;
+        top: 247vh;
+        left: 262px;
+        opacity: 0.05;
+        transform: rotateZ(-50deg);
+    }
 
     header {
         // border: 1px solid red;
@@ -46,7 +91,7 @@ body {
             @media (min-width: $desktop) {
                 // padding-top: initial;
                 padding: 20px;
-                width: 25%;
+                width: 20%;
             }
         }
 
@@ -58,7 +103,7 @@ body {
 
             @media (min-width: $desktop) {
                 font-size: 6.5rem;
-                padding: 0 20px;
+                padding: 2.5rem 20px;
             }
         }
 
@@ -67,7 +112,7 @@ body {
             padding: 5px;
 
             @media (min-width: $desktop) {
-                padding: 1rem 0;
+                padding: 2rem 0;
             }
         }
 
@@ -76,7 +121,7 @@ body {
             line-height: 2;
             // @include mixins.flex(row);
             // width: 100%;
-            padding: 5rem 0.5rem;
+            padding: 2rem 0.5rem;
             @media (min-width: $desktop) {
                 width: 80%;
             }
@@ -139,47 +184,50 @@ body {
             // @include mixins.flex(); ---- took out due to firefox issues
         }
         .skills {
-            background: $white;
-            justify-content: flex-start;
-            font-size: 2.5rem;
-            max-width: $maxWidth;
-
+            display: block;
+            background: $medium-dark;
+            // justify-content: flex-start;
+            font-size: 1.5rem;
+            // max-width: $maxWidth;
+            min-height: initial;
             // @media (min-width: $desktop) {
             //     max-height: 85vh;
             // }
 
             ul {
                 @include mixins.flex(row, space-around, flex-start);
+
                 // align-content: space-around;
                 height: 100%;
                 // border: 1px solid red;
 
-                // @media (min-width: $desktop) {
-                //     @include mixins.flex(column, flex-start, space-around);
-                //     align-content: space-around;
-                // }
+                @media (min-width: $tablet) {
+                    flex-wrap: nowrap;
+                    // @include mixins.flex(column, flex-start, space-around);
+                    // align-content: space-around;
+                }
 
                 li {
                     @include mixins.flex();
-                    width: 48%;
+                    width: 14%;
                     color: $medium-bright;
-                    padding: 15px 0;
+                    padding: 15px 10px;
                     text-align: center;
                     // border: 1px solid green;
 
                     @media (min-width: $desktop) {
-                        width: 25%;
-                        padding: 30px 0;
+                        // width: 25%;
+                        padding: 30px 10px;
                     }
 
                     i,
                     .iconify {
                         color: $medium-bright;
-                        font-size: 5rem;
+                        font-size: 3rem;
                         padding: 3px;
                     }
                     svg {
-                        width: 5.5rem;
+                        width: 3rem;
                         padding: 3px;
                         fill: $medium-bright;
                     }
@@ -188,12 +236,12 @@ body {
         }
 
         .projects-container {
-            background: $dark;
+            background: $white;
             width: 100%;
         }
         .projects {
-            background: $dark;
-            color: $white;
+            background: $white;
+            color: $project-text;
             max-width: $maxWidth;
 
             .section-heading {
@@ -205,6 +253,8 @@ body {
                 background: $medium-dark;
                 margin: 25px 0;
                 padding: 0 15px;
+                border-radius: 15px;
+                width: 90%;
                 @include mixins.flex();
 
                 @media (min-width: $tablet) {
@@ -224,7 +274,7 @@ body {
                         // border: 1px solid red;
                         padding-left: 3rem;
                         margin-left: 2rem;
-                        border-left: 4px solid $medium-bright;
+                        // border-left: 4px solid $medium-bright;
                         border-radius: 10px;
                         width: 45%;
                     }
@@ -277,20 +327,20 @@ body {
                 }
 
                 a {
-                    color: $bright;
+                    color: $medium-bright;
                 }
             }
 
             .description {
                 padding: 10px;
                 line-height: 1.4;
-                font-size: 2.2rem;
+                font-size: 1.5rem;
             }
 
             .tech-list {
                 @include mixins.flex(row, flex-start, flex-start);
                 padding: 10px 0;
-
+                font-size: 1.5rem;
                 .tech {
                     // text-align: center;
                     margin: 5px;
@@ -309,7 +359,7 @@ body {
                     list-style: outside;
                     margin: 10px;
                     line-height: 1.4;
-                    font-size: 2.2rem;
+                    font-size: 1.5rem;
                 }
             }
         }

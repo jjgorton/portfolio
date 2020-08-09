@@ -143,7 +143,7 @@ html {
 }
 
 nav {
-  background: #073763;
+  background: #1f2833;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -151,8 +151,9 @@ nav {
   z-index: 2;
 }
 nav .scroll-position {
-  width: 25%;
+  width: 20%;
   height: 10px;
+  border-radius: 15px;
   background: #69c4ee;
   position: fixed;
   bottom: 0;
@@ -167,16 +168,22 @@ nav ul {
   flex-wrap: nowrap;
 }
 nav ul .nav-item {
-  font-size: 2rem;
+  font-size: 3.2vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #1f2833;
+  border-top: 1px solid #315368;
   background: none;
   height: 50px;
-  width: 25%;
+  width: 20%;
+  padding: 5px;
+}
+@media (min-width: 700px) {
+  nav ul .nav-item {
+    font-size: 2rem;
+  }
 }
 nav ul .nav-item li,
 nav ul .nav-item a {
@@ -189,6 +196,7 @@ nav ul .nav-item a {
   color: #fdfdfd;
   width: 100%;
   height: 100%;
+  text-align: center;
 }
 
 body {
@@ -197,6 +205,49 @@ body {
   color: #fdfdfd;
   padding-bottom: 60px;
   margin: 0 auto;
+  overflow-x: hidden;
+}
+body .bck-shape-one {
+  width: 80vw;
+  height: 80vw;
+  background: #fdfdfd;
+  position: absolute;
+  z-index: 0;
+  transform: translateX(25px);
+  opacity: 0.1;
+  transform: rotateZ(130deg);
+}
+body .bck-shape-two {
+  width: 100vw;
+  height: 80vw;
+  background: #fdfdfd;
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  opacity: 0.05;
+  transform: rotateZ(80deg);
+}
+body .bck-shape-three {
+  width: 100vw;
+  height: 80vw;
+  background: #fdfdfd;
+  position: absolute;
+  z-index: 0;
+  top: 261vh;
+  left: -60vw;
+  opacity: 0.05;
+  transform: rotateZ(-130deg);
+}
+body .bck-shape-four {
+  width: 117vw;
+  height: 83vw;
+  background: #fdfdfd;
+  position: absolute;
+  z-index: 0;
+  top: 247vh;
+  left: 262px;
+  opacity: 0.05;
+  transform: rotateZ(-50deg);
 }
 body header {
   display: flex;
@@ -230,7 +281,7 @@ body header .face {
 @media (min-width: 700px) {
   body header .face {
     padding: 20px;
-    width: 25%;
+    width: 20%;
   }
 }
 body header .name {
@@ -242,7 +293,7 @@ body header .name {
 @media (min-width: 700px) {
   body header .name {
     font-size: 6.5rem;
-    padding: 0 20px;
+    padding: 2.5rem 20px;
   }
 }
 body header .title {
@@ -251,13 +302,13 @@ body header .title {
 }
 @media (min-width: 700px) {
   body header .title {
-    padding: 1rem 0;
+    padding: 2rem 0;
   }
 }
 body header .moto {
   font-size: 2rem;
   line-height: 2;
-  padding: 5rem 0.5rem;
+  padding: 2rem 0.5rem;
 }
 @media (min-width: 700px) {
   body header .moto {
@@ -308,10 +359,10 @@ body main .skills-container {
   width: 100%;
 }
 body main .skills {
-  background: #fdfdfd;
-  justify-content: flex-start;
-  font-size: 2.5rem;
-  max-width: 1300px;
+  display: block;
+  background: #1f283328;
+  font-size: 1.5rem;
+  min-height: initial;
 }
 body main .skills ul {
   display: flex;
@@ -321,41 +372,45 @@ body main .skills ul {
   align-items: flex-start;
   height: 100%;
 }
+@media (min-width: 1100px) {
+  body main .skills ul {
+    flex-wrap: nowrap;
+  }
+}
 body main .skills ul li {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 48%;
+  width: 14%;
   color: #4592b6;
-  padding: 15px 0;
+  padding: 15px 10px;
   text-align: center;
 }
 @media (min-width: 700px) {
   body main .skills ul li {
-    width: 25%;
-    padding: 30px 0;
+    padding: 30px 10px;
   }
 }
 body main .skills ul li i,
 body main .skills ul li .iconify {
   color: #4592b6;
-  font-size: 5rem;
+  font-size: 3rem;
   padding: 3px;
 }
 body main .skills ul li svg {
-  width: 5.5rem;
+  width: 3rem;
   padding: 3px;
   fill: #4592b6;
 }
 body main .projects-container {
-  background: #1f2833;
+  background: #fdfdfd;
   width: 100%;
 }
 body main .projects {
-  background: #1f2833;
-  color: #fdfdfd;
+  background: #fdfdfd;
+  color: #285368;
   max-width: 1300px;
 }
 body main .projects .section-heading {
@@ -363,9 +418,11 @@ body main .projects .section-heading {
   padding-bottom: initial;
 }
 body main .projects .project {
-  background: #073763;
+  background: #1f283328;
   margin: 25px 0;
   padding: 0 15px;
+  border-radius: 15px;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -387,7 +444,6 @@ body main .projects .project {
     align-items: center;
     padding-left: 3rem;
     margin-left: 2rem;
-    border-left: 4px solid #4592b6;
     border-radius: 10px;
     width: 45%;
   }
@@ -440,12 +496,12 @@ body main .projects .project-heading .github i {
   }
 }
 body main .projects .project-heading a {
-  color: #69c4ee;
+  color: #4592b6;
 }
 body main .projects .description {
   padding: 10px;
   line-height: 1.4;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 body main .projects .tech-list {
   display: flex;
@@ -454,6 +510,7 @@ body main .projects .tech-list {
   justify-content: flex-start;
   align-items: flex-start;
   padding: 10px 0;
+  font-size: 1.5rem;
 }
 body main .projects .tech-list .tech {
   margin: 5px;
@@ -472,7 +529,7 @@ body main .projects .contribution-list .contribution {
   list-style: outside;
   margin: 10px;
   line-height: 1.4;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 body main .contact-container {
   width: 100%;

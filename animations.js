@@ -2,10 +2,10 @@
 
 const links = document.querySelectorAll('a');
 
-links.forEach(link => {
+links.forEach((link) => {
     let color = getStyle(link, 'color');
     // let newColor = LightenDarkenColor(color, 16);
-    let newColor = '#a7e3ff';
+    let newColor = '#69c4ee';
 
     //move up
     link.style.transition = 'all 0.2s ease-out';
@@ -21,7 +21,7 @@ links.forEach(link => {
 
 const title = document.querySelectorAll('.title');
 
-title.forEach(link => {
+title.forEach((link) => {
     //move
     link.style.transition = 'transform 0.2s ease-out';
     link.addEventListener('mouseenter', () => {
