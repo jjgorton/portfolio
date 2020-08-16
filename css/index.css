@@ -450,6 +450,7 @@ body main .projects .project {
 }
 body main .projects .app-img {
   max-width: 100%;
+  cursor: pointer;
 }
 body main .projects .project-heading {
   display: flex;
@@ -477,26 +478,32 @@ body main .projects .project-heading .title {
     padding-bottom: 4rem;
   }
 }
+body main .projects .project-heading .app-links {
+  display: flex;
+  flex-wrap: wrap;
+}
 body main .projects .project-heading .github {
   padding: 10px;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
 }
 body main .projects .project-heading .github i {
-  font-size: 3rem;
-  padding: 0 5px 0 0;
+  font-size: 2.5rem;
+  padding: 0 5px 0 5px;
 }
-@media (min-width: 1100px) {
-  body main .projects .project-heading .github {
-    padding: 3.7rem 0 0 0;
-  }
+body main .projects .project-heading .p1 {
+  transform: translate(-10px, -15px);
 }
-@media (min-width: 1100px) {
-  body main .projects .project-heading .p1 {
-    padding: 10px 0 0 0;
-  }
-}
-body main .projects .project-heading a {
+body main .projects .project-heading a,
+body main .projects .project-heading button {
   color: #4592b6;
+}
+body main .projects .project-heading button {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  outline: none;
 }
 body main .projects .description {
   padding: 10px;
@@ -616,6 +623,19 @@ body main .follow .method .fcc .fcc-title {
 body main .follow .method {
     width: 386px;
   }
+}
+
+.demo {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.37);
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

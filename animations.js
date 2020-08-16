@@ -1,8 +1,9 @@
 // adding simple hover animations to clickable items
 
 const links = document.querySelectorAll('a');
+const buttons = document.querySelectorAll('button');
 
-links.forEach((link) => {
+[...links, ...buttons].forEach((link) => {
     let color = getStyle(link, 'color');
     // let newColor = LightenDarkenColor(color, 16);
     let newColor = '#69c4ee';
