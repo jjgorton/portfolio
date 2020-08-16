@@ -283,6 +283,7 @@ body {
 
             .app-img {
                 max-width: 100%;
+                cursor: pointer;
                 // border: 1px solid red;
             }
 
@@ -308,26 +309,42 @@ body {
                         padding-bottom: 4rem;
                     }
                 }
+
+                .app-links {
+                    display: flex;
+                    flex-wrap: wrap;
+                    // justify-content: space-evenly;
+                    // width: 79%;
+                }
+
                 .github {
                     padding: 10px;
-                    font-size: 2.5rem;
+                    font-size: 2rem;
+                    text-align: center;
                     i {
-                        font-size: 3rem;
-                        padding: 0 5px 0 0;
+                        font-size: 2.5rem;
+                        padding: 0 5px 0 5px;
                     }
-                    @media (min-width: $tablet) {
-                        padding: 3.7rem 0 0 0;
-                    }
+                    // @media (min-width: $tablet) {
+                    //     padding: 3.7rem 0 0 0;
+                    // }
                 }
                 .p1 {
+                    transform: translate(-10px, -15px);
                     @media (min-width: $tablet) {
-                        padding: 10px 0 0 0;
+                        // padding: 10px 0 0 0;
                         // color: red;
                     }
                 }
 
-                a {
+                a,
+                button {
                     color: $medium-bright;
+                }
+                button {
+                    background: none;
+                    border: none;
+                    text-decoration: underline;
                 }
             }
 
