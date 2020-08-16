@@ -502,6 +502,8 @@ body main .projects .project-heading button {
   background: none;
   border: none;
   text-decoration: underline;
+  cursor: pointer;
+  outline: none;
 }
 body main .projects .description {
   padding: 10px;
