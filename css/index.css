@@ -637,5 +637,14 @@ body main .follow .method {
   justify-content: center;
   align-items: center;
 }
+.demo .close {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  font-size: 8rem;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=index.css.map */
