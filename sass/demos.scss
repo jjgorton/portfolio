@@ -13,4 +13,14 @@
     display: none;
     justify-content: center;
     align-items: center;
+
+    .close {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        font-size: 8rem;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
 }
