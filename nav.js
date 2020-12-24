@@ -2,10 +2,10 @@
 // current selection indicator based on scroll position.
 
 // this is to check if the indicator needs to translate Y or X
-let dir = window.matchMedia('(min-width: 700px)');
-// putting the nav back at the bottom for all screen sizes !('Y' : 'X')
-const check = (media) => (media.matches ? 'X' : 'X');
-dir.addListener(check);
+// let dir = window.matchMedia('(min-width: 700px)');
+// // putting the nav back at the bottom for all screen sizes !('Y' : 'X')
+// const check = (media) => (media.matches ? 'X' : 'X');
+// // dir.addListener(check);
 
 window.onscroll = (e) => {
     const scroll = document.querySelector('.scroll-position');
@@ -34,7 +34,7 @@ window.onscroll = (e) => {
 
     // check(dir) returns 'X' or 'Y' depending on screen size
     if (aboutB > winHeight) {
-        scroll.style.transform = `translate${check(dir)}(${0}%)`;
+        scroll.style.transform = `translateX(${0}%)`;
     }
     // if (aboutB < winHeight && skillsB > winHeight) {
     //     scroll.style.transform = `translate${check(dir)}(${100}%)`;
@@ -43,15 +43,15 @@ window.onscroll = (e) => {
     //     scroll.style.transform = `translate${check(dir)}(${200}%)`;
     // }
     if (aboutB < winHeight && coachMeB > winHeight) {
-        scroll.style.transform = `translate${check(dir)}(${100}%)`;
+        scroll.style.transform = `translateX(${100}%)`;
     }
     if (coachMeB < winHeight && noiseControllerB > winHeight) {
-        scroll.style.transform = `translate${check(dir)}(${200}%)`;
+        scroll.style.transform = `translateX(${200}%)`;
     }
     if (noiseControllerB < winHeight && deforestDashB > winHeight) {
-        scroll.style.transform = `translate${check(dir)}(${300}%)`;
+        scroll.style.transform = `translateX(${300}%)`;
     }
     if (deforestDashB < winHeight) {
-        scroll.style.transform = `translate${check(dir)}(${400}%)`;
+        scroll.style.transform = `translateX(${400}%)`;
     }
 };
